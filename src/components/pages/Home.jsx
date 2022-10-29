@@ -40,7 +40,7 @@ export default function Home() {
   
         return _ => window.removeEventListener('resize', handleResize)
       }, [windowSize])
-
+    const isWide = windowSize > 1536
     // CARDS
     const renderPage = destinations.map((destination, idx) => {
         return (
